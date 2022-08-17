@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+#divProductos{
+    display: flex;
+    flex-basis: auto;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding: 10px;
+}
+
+
+
+.productCard {
+    
+    padding: 100px;
+    margin: 10px;
+    padding: 10px;
+}
+
+
