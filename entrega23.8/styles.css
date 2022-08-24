@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+#divProductos{
+    display: flex;
+    flex-basis: auto;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding: 10px;
+}
+
+
+
+.productCard {
+    
+    padding: 100px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.card-body {
+
+    background-color: rgb(233, 213, 213);
+    border: 1px, solid, blue;
+    border-radius: 10px;
+    height: 10rem;
+    width: 10rem;
+    
+    
+}
+
+
+
+.item {
+    
+    padding: 1rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.card-contenido {
+    margin:10px;
+    
+    text-align: center;
+}
+
+.formularioSeleccion {
+    visibility: hidden;
+}
