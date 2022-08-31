@@ -97,9 +97,8 @@ tipoProducto.addEventListener('submit', (event) => {
               <h6 class="card-subtitle mb-2 text-muted card-contenido">${frutosArr.tipo}</h6>
               <p class="card-text card-contenido">${frutosArr.valor}</p>
             </div>
-            <h2>aaaa</h2>
-            <div> <button type="button" class="btn btn-primary">Primary</button>
-</div>
+            <button type="button" class="btn btn-dark botondecompra">Comprar</button>
+
          
            `
         })
@@ -117,7 +116,7 @@ tipoProducto.addEventListener('submit', (event) => {
               <h6 class="card-subtitle mb-2 text-muted card-contenido">${frutosArr.tipo}</h6>
               <p class="card-text card-contenido">${frutosArr.valor}</p>
             </div>
-
+            <button type="button" class="btn btn-dark botondecompra">Comprar</button>
            `
         })
 
@@ -128,13 +127,13 @@ tipoProducto.addEventListener('submit', (event) => {
         divProductos.innerHTML = ``
         tipoSelec.forEach((frutosArr) => {
 
-            divProductos.innerHTML += `<div class="card">
-            <div class="card-body productCard id="${frutosArr.tipo}">
-              <h5 class="card-title">${frutosArr.nombre}</h5>
-              <h6 class="card-subtitle mb-2 text-muted">${frutosArr.tipo}</h6>
-              <p class="card-text">${frutosArr.valor}</p>
+            divProductos.innerHTML += `<div class="item">
+            <div class="card-body card-contenido" id="${frutosArr.tipo}">
+              <h5 class="card-title card-contenido ">${frutosArr.nombre}</h5>
+              <h6 class="card-subtitle mb-2 text-muted card-contenido">${frutosArr.tipo}</h6>
+              <p class="card-text card-contenido">${frutosArr.valor}</p>
             </div>
-           </div>
+            <button type="button" class="btn btn-dark botondecompra">Comprar</button>
            `
         })
 
@@ -146,13 +145,13 @@ tipoProducto.addEventListener('submit', (event) => {
         divProductos.innerHTML = ``
         tipoSelec.forEach((frutosArr) => {
 
-            divProductos.innerHTML += `<div class="card">
-            <div class="card-body productCard id="${frutosArr.tipo}">
-              <h5 class="card-title">${frutosArr.nombre}</h5>
-              <h6 class="card-subtitle mb-2 text-muted">${frutosArr.tipo}</h6>
-              <p class="card-text">${frutosArr.valor}</p>
+            divProductos.innerHTML += `<div class="item">
+            <div class="card-body card-contenido" id="${frutosArr.tipo}">
+              <h5 class="card-title card-contenido ">${frutosArr.nombre}</h5>
+              <h6 class="card-subtitle mb-2 text-muted card-contenido">${frutosArr.tipo}</h6>
+              <p class="card-text card-contenido">${frutosArr.valor}</p>
             </div>
-           </div>
+            <button type="button" class="btn btn-dark botondecompra">Comprar</button>
            `
         })
 
@@ -160,18 +159,39 @@ tipoProducto.addEventListener('submit', (event) => {
     
     
     
+    const botonescomprar = document.getElementsByClassName("botondecompra")  
     
-})
+    for (let i = 0; i < botonescomprar.length; i++) {
+        botonescomprar[i].addEventListener('click', () => {
+            Toastify({
+                text: "Producto agregado al carrito",
+                duration: 3000,
+                //destination: "https://github.com/apvarun/toastify-js",
+                newWindow: true,
+                close: true,
+                gravity: "bottom", // `top` or `bottom`
+                position: "right", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                background: "linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);",
+                },
+                onClick: function(){} // Callback after click
+              }).showToast();
+        }) 
+        
+    }
+    
+    
+} )
+
+
 const formularioSeleccion = document.getElementById("eleccionProducto")
 
 var productoSeleccion =  []
 
-if(localStorage.getItem('productoSeleccion')) { 
-    tareas = JSON.parse(localStorage.getItem('productoSeleccion'))
-}
-else{
-    localStorage.setItem('productoSeleccion', JSON.stringify(productoSeleccion))
-}
+
+
+
 
 formularioSeleccion.addEventListener('submit', (e) => {
 
@@ -185,8 +205,8 @@ formularioSeleccion.addEventListener('submit', (e) => {
     
 
             localStorage.setItem('productoSeleccion', JSON.stringify(productoSeleccion))
-    
 })
+
 
 
 
