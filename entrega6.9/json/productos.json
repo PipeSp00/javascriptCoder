@@ -1,0 +1,69 @@
+[
+    {
+        "nombre": "mani",
+        "clase": "frutos",
+        "precio": 200,
+        "stock": 50
+    },
+    {
+        "nombre": "nuez",
+        "clase": "frutos",
+        "precio": 150,
+        "stock": 40
+    },
+    {
+        "nombre": "avellanas",
+        "clase": "frutos",
+        "precio": 250,
+        "stock": 10
+    },
+    {
+        "nombre": "pistacho",
+        "clase": "frutos",
+        "precio": 100,
+        "stock": 30
+    },
+    {
+        "nombre": "pasas de uva",
+        "clase": "pasas",
+        "precio": 200,
+        "stock": 35
+    },
+    {
+        "nombre": "pasas de ciruela",
+        "clase": "frutos",
+        "precio": 120,
+        "stock": 25
+    },
+    {
+        "nombre": "harina de coco",
+        "clase": "harinas",
+        "precio": 270,
+        "stock": 12
+    },
+    {
+        "nombre": "harina de almendra",
+        "clase": "harinas",
+        "precio": 320,
+        "stock": 10
+    },
+    {
+        "nombre": "aritos de miel",
+        "clase": "cereals",
+        "precio": 50,
+        "stock": 5
+    },
+    {
+        "nombre": "bolitas de chocolate",
+        "clase": "cereales",
+        "precio": 45,
+        "stock": 60
+    }
+    
+
+    
+    
+
+    
+    
+]
