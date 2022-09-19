@@ -297,3 +297,31 @@ do {
     } while (repetir != "si" && repetir != "no")
 
 } while (repetir != "no")
+
+
+
+
+
+
+
+
+
+
+/*
+formularioRegistro.addEventListener('submit', (e) => {
+    e.preventDefault () // Agregar que te lleve al inicio
+    
+    const infoUsuario = new FormData(e.target)
+
+    const usuarioDataInput = new Usuario (infoUsuario.get("usuario"), infoUsuario.get("contrasena"), infoUsuario.get("nombre"), infoUsuario.get("apellido"), infoUsuario.get("email"), infoUsuario.get("telefono"))
+    
+    const usuarioUser = (usuarioDataInput.usuario)
+    const usuarioContrasena = (usuarioDataInput.contrasena)
+
+    usuariosDataInput.push(usuariosData)
+
+
+    localStorage.setItem('usuario', usuarioUser)
+    localStorage.setItem('contrasena', usuarioContrasena)
+})
+*

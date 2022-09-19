@@ -1,0 +1,41 @@
+[
+    {
+        "id": 0,
+        "usuario": "docente",
+        "contrasena": "Clavedocente1",
+        "nombre": "Francisco",
+        "apellido" : "Pugh"
+    },
+    {   "id": 1,
+        "usuario": "alumno",
+        "contrasena": "Clavealumno1",
+        "nombre": "Felipe",
+        "apellido" : "Spena"
+    },
+    {   "id": 2,
+        "usuario": "tutor",
+        "contrasena": "Clavetutor1",
+        "nombre": "Bruno",
+        "apellido" : "Simone"
+    },
+    {   "id": 3,
+        "usuario": "comprador",
+        "contrasena": "Clavecomprador1",
+        "nombre": "Cosme",
+        "apellido" : "Fulanito"
+    },
+    {   "id": 4,
+        "usuario": "apu",
+        "contrasena": "Claveapu1",
+        "nombre": "Apu",
+        "apellido" : "nahasapeemapetilon"
+    },
+    {   "id": 5,
+        "usuario": "moe",
+        "contrasena": "Clavecantinero1",
+        "nombre": "Moe",
+        "apellido" : "szyslak"
+    }
+
+
+]

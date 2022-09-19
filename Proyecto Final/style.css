@@ -1,0 +1,177 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+a{
+    text-decoration: none;
+    color:black
+}
+
+.loginButton{
+    padding: 1%;
+    margin: 1%;
+    background: none;
+    border-radius: 10px;
+    
+}
+.logoImg{
+    width: 10%;
+    height: 10%;
+    margin: 1%;
+}
+
+.upperBanner {
+    display: flex;
+    justify-content: center;
+
+}
+
+.navTit{
+    margin-left: 5%;
+    
+}
+.navTitText{
+    font-size: medium;
+
+}
+
+.fondo{
+    height: 100vh;
+    width: 100vw;
+}
+.navBar{
+    width: 40vw;
+    display: flex;
+    align-content:center;
+    justify-content: space-between;
+    flex-direction:row;
+    
+    
+    
+}
+.navBanner{
+    background-color:burlywood ;
+}
+
+.usuario {
+    display: flex;
+    width: 20vw;
+    justify-content: flex-end;
+    align-items:flex-end;
+    margin-right: 1%;
+}
+
+.botonUsuario {
+    
+    width: max-content;
+    margin-right: 10%
+}
+
+.botonRegistro{
+    
+    width: max-content;
+    margin-left: 10%
+}
+
+
+.usuariologged {
+   background-color:white;
+   padding-top:3%;
+   padding-left:5%;
+   padding-right:5%;
+   border-radius:20%
+
+
+}
+h5{
+    text-align: center;
+}
+h3{
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.aaa {
+    background-color:blue;
+    align-content: center;
+}
+
+.botonimagen{
+    position: relative;
+    left:45vw;
+    bottom:30vh;
+    padding:1%
+    
+}
+
+.carritoImg{
+    width:20%;
+    margin-left: 10%
+}
+.details {
+    border: 1.5px solid grey;
+    color: #212121;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 10px #212121;
+}
+
+.cart {
+    background-color: #212121;
+    color: white;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 900;
+    width: 100%;
+    height: 39px;
+    padding-top: 9px;
+    box-shadow: 0px 5px 10px  #212121;
+}
+
+.card {
+    width: 15rem;
+    height: 15rem;
+}
+
+.card-body {
+    width: fit-content;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.img-thumbnail {
+    border: none;
+}
+
+.card {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+#divTienda {
+
+    
+    
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    
+}
+
+
+.botonFiltro {
+    margin: 2%;
+}
+
+.dp {
+    display: flex;
+    background-color: red;
+}
