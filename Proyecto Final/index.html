@@ -15,54 +15,72 @@
 
 </head>
 <div>
-    <div class="upperBanner">
-        <img class="logoImg" src="./multimedia/logo.jpg" alt="logo">    
-    </div>
+  <div class="upperBanner">
+      <img class="logoImg" src="./multimedia/logo.jpg" alt="logo">     
+      </div>
+  </div>
 </div>
 <div class="navBanner">
-    <nav class="navbar">
-        <div class="container-fluid">
-            <div class="navBar">
-              
-                    <div><a class="nav-link active aaa" aria-current="page" href="#">Home</a></div>
-                    <div>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                          </form>    
-                    </div>
-                         
-                
-
-                 
-            </div> 
+  <nav class="navbar">
+      <div class="container-fluid">
+          <div class="navBar">
             
-            <div id="divUsuario" class="usuario"></div>
+            <div><a class="nav-link active home" aria-current="page" href="./pages/tienda.html">Tienda</a></div>
+            <div>
+              
+                      <form id="searchbar" class="d-flex" role="search">
+                          <input  class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="busqueda">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>    
+                  </div>
+          </div> 
+          
+          <div id="divUsuario" onclick="openNav()"class="usuario"></div>
 
+      </div>
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div id="contenidoCarrito"></div>
+        <button id="borrar" class="btn btn-danger borrar" >Borrar</button>
+        <div class="precioCar">
+          <div id="divPrecio"></div> 
+          <button id="BotonFinalizarCompra" class="btn btn-success">Finalizar compra</button>
         </div>
-      </nav>
+ 
+          
+        </div>
+      </div>
+      
+      
+    </nav>
 </div>
       <main>
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./multimedia/almendras.jpeg" class="d-block w-100" alt="aaaaa">
-                <button id ="botonFrutos" class="btn btn-success botonimagen" > <a href="./pages/tienda.html">  Comprar ahora</a></button>
-              </div>
-              <div class="carousel-item active">
-                <img src="./multimedia/almendras.jpeg" class="d-block w-100" alt="aaaaa">
-                <button id ="botonFrutos" class="btn btn-success botonimagen" > <a href="./pages/tienda.html">  Comprar ahora</a></button>
-              </div>
-              <div class="carousel-item active">
-                <img src="./multimedia/almendras.jpeg" class="d-block w-100" alt="aaaaa">
-                <button id ="botonFrutos" class="btn btn-success botonimagen" > <a href="./pages/tienda.html">  Comprar ahora</a></button>
-              </div>
-              <div class="carousel-item active">
-                <img src="./multimedia/almendras.jpeg" class="d-block w-100" alt="aaaaa">
-                <button id ="botonFrutos" class="btn btn-success botonimagen" > <a href="./pages/tienda.html">  Comprar ahora</a></button>
-              </div>
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./multimedia/almendras.jpeg"  class="d-block imgCar w-100" alt="...">
+              <button id ="botonFrutos" class="btn btn-success botonimagen" > <a href="./pages/tienda.html">  Comprar ahora</a></button>
+            </div>
+            <div class="carousel-item">
+              <img src="./multimedia/frutossecos.jpg" class="d-block imgCar w-100" alt="...">
+              <button id ="botonFrutos" class="btn btn-success botonimagen" > <a href="./pages/tienda.html">  Comprar ahora</a></button>
+            </div>
+            <div class="carousel-item">
+              <img src="./multimedia/mani.jpeg" class="d-block imgCar w-100" alt="...">
+              <button id ="botonFrutos" class="btn btn-success botonimagen" > <a href="./pages/tienda.html">  Comprar ahora</a></button>
             </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
       </main>
 
       <aside>
@@ -71,6 +89,7 @@
       </aside>
         
 <script src= "./script/scriptmain.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

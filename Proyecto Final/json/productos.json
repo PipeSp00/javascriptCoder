@@ -4,61 +4,71 @@
         "nombre": "Mani",
         "clase": "frutos",
         "precio": 200,
-        "stock": 50
+        "stock": 50,
+        "img":"mani.jpeg"
     },
-    {    "index" : 2,
+    {   "index" : 2,
         "nombre": "Nuez",
         "clase": "frutos",
         "precio": 150,
-        "stock": 40
+        "stock": 40,
+        "img":"nueces.jfif"
     },
     {   "index" : 3,
         "nombre": "Avellanas",
         "clase": "frutos",
         "precio": 250,
-        "stock": 10
+        "stock": 10,
+        "img":"avellanas.jpg"
     },
     {   "index" : 4,
         "nombre": "Pistacho",
         "clase": "frutos",
         "precio": 100,
-        "stock": 30
+        "stock": 30,
+        "img":"pistacho.jfif"
     },
     {   "index" : 5,
         "nombre": "Pasas de uva",
         "clase": "pasas",
         "precio": 200,
-        "stock": 35
+        "stock": 35,
+        "img":"pasasuva.jpg"
     },
     {   "index" : 6,
         "nombre": "Pasas de ciruela",
         "clase": "pasas",
         "precio": 120,
-        "stock": 25
+        "stock": 25,
+        "img":"ciruela.jfif"
     },
     {   "index" : 7,
         "nombre": "Harina de coco",
         "clase": "harinas",
         "precio": 270,
-        "stock": 12
+        "stock": 12,
+        "img":"harinacoco.jpg"
     },
     {   "index" : 8,
         "nombre": "Harina de almendra",
         "clase": "harinas",
         "precio": 320,
-        "stock": 10
+        "stock": 10,
+        "img":"harinalmendra.jpg"
     },
     {   "index" : 9,
         "nombre": "Aritos de miel",
         "clase": "cereales",
         "precio": 50,
-        "stock": 5
+        "stock": 5,
+        "img":"aritosmiel.jpg"
     },
     {   "index" : 10,
         "nombre": "Bolitas de chocolate",
         "clase": "cereales",
         "precio": 45,
-        "stock": 60
+        "stock": 60,
+        "img":"bolitaschocolate.jpg"
     }
     
 ]
